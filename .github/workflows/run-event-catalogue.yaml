@@ -1,7 +1,7 @@
 # This is our workflow - publish-image.yaml
-name: Publish image to DockerHub
+name: Run event-catalogue image on GitHub Actions Hosted Runner
 
-on: 
+on:
   workflow_dispatch:
 
 jobs:
