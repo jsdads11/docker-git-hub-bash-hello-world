@@ -1,0 +1,16 @@
+# This is our workflow
+name: Publish image to DockerHub
+on: [workflow_dispatch]
+
+jobs:
+  publish_image:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v3
+      - name: build
+        run: |
+          docker build . -t jsdads11/docker-git-hub-bash-hello-world
+      - name: run
+        run: |
+          docker run -it jsdads11/docker-git-hub-bash-hello-world
