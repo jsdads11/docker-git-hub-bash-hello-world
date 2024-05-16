@@ -1,0 +1,18 @@
+# This is our event catalogue workflow - run-event-catalogue.yaml
+name: Run eventcatalogue image on GitHub Actions Hosted Runner
+
+on:
+  workflow_dispatch:
+
+jobs:
+  publish_image:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v3
+      - name: build
+        run: |
+          docker build . eventcatalog
+      - name: run
+        run: |
+          docker run -p 3000:3000 -t eventcatalog
