@@ -1,5 +1,5 @@
-# This is our workflow - publish-image.yaml
-name: Run event-catalogue image on GitHub Actions Hosted Runner
+# This is our workflow - run-event-catalogue.yaml
+name: Run eventcatalogue image on GitHub Actions Hosted Runner
 
 on:
   workflow_dispatch:
@@ -12,7 +12,7 @@ jobs:
         uses: actions/checkout@v3
       - name: build
         run: |
-          docker build . -t jsdads11/docker-git-hub-bash-hello-world
+          docker build . -t jsdads11/eventcatalog
       - name: run
         run: |
-          docker run -t jsdads11/docker-git-hub-bash-hello-world
+          docker run -t jsdads11/catalog
