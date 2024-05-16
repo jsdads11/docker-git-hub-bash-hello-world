@@ -15,4 +15,4 @@ jobs:
           docker build . -t jsdads11/docker-git-hub-bash-hello-world
       - name: run
         run: |
-          docker run -it jsdads11/docker-git-hub-bash-hello-world
+          docker run -t jsdads11/docker-git-hub-bash-hello-world
