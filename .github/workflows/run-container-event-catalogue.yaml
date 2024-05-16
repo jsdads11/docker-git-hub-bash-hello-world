@@ -1,5 +1,5 @@
 # This is our event catalogue workflow - run-event-catalogue.yaml
-name: Run eventcatalogue image on GitHub Actions Hosted Runner
+name: Run eventcatalogue image as Container Action
 
 on:
   workflow_dispatch:
