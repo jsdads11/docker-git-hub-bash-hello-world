@@ -15,4 +15,4 @@ jobs:
           docker build . -t jsdads11/eventcatalog
       - name: run
         run: |
-          docker run -t jsdads11/catalog
+          docker run -t jsdads11/eventcatalog
