@@ -1,6 +1,7 @@
 # This is our workflow - publish-image.yaml
 name: Publish image to DockerHub
-on: [workflow_dispatch]
+on: 
+  [workflow_dispatch]
 
 jobs:
   publish_image:
